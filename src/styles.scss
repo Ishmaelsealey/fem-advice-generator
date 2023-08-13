@@ -1,0 +1,76 @@
+$NeonGreen: hsl(150, 100%, 66%);
+$Light-cyan: hsl(193, 38%, 86%);
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: hsl(218, 23%, 16%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	font-family: Manrope, sans-serif;
+	color: $Light-cyan;
+}
+
+h1 {
+	text-transform: uppercase;
+	color: $NeonGreen;
+	font-size: 16px;
+	letter-spacing: 0.2em;
+	margin-bottom: 1.5em;
+}
+
+article {
+	max-width: 500px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+	background-color: hsl(219, 19%, 24%);
+	border-radius: 1em;
+	// padding-bottom: 3.5em;
+	padding: 2em 1.5em 3.5em;
+	margin: 0 1em;
+}
+
+.advice {
+	font-size: 28px;
+}
+
+.line-break {
+	margin-top: 2em;
+}
+
+.desktop-divider {
+	display: none;
+}
+
+.dice {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 4em;
+	height: 4em;
+	border-radius: 50%;
+	background-color: $NeonGreen;
+	position: absolute;
+	bottom: -2em;
+}
+
+@media screen and (min-width: 600px) {
+	.desktop-divider {
+		display: block;
+	}
+	.mobile-divider {
+		display: none;
+	}
+	article {
+		padding: 2em 2em 3.5em;
+	}
+}
