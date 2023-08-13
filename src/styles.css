@@ -47,16 +47,28 @@ article {
   display: none;
 }
 
+.sr-only {
+  position: absolute;
+  opacity: 0;
+}
+
 .dice {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 4em;
-  height: 4em;
+  width: 4.5em;
+  height: 4.5em;
   border-radius: 50%;
   background-color: hsl(150deg, 100%, 66%);
   position: absolute;
   bottom: -2em;
+  border: none;
+  transition: box-shadow 1s ease;
+}
+
+.dice:hover {
+  cursor: pointer;
+  box-shadow: 0 0 2em hsl(150deg, 100%, 66%);
 }
 
 @media screen and (min-width: 600px) {
