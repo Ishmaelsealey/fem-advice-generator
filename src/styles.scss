@@ -68,11 +68,28 @@ article {
 	bottom: -2em;
 	border: none;
 	transition: box-shadow 1s ease;
+	animation-name: dice-spin;
+	animation-duration: 10s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-fill-mode: forwards;
+	animation-play-state: paused;
+	svg {
+		animation: dice-spin 20s linear infinite forwards;
+		animation-play-state: running;
+	}
 }
 
 .dice:hover {
 	cursor: pointer;
 	box-shadow: 0 0 2em $NeonGreen;
+	animation-play-state: running;
+}
+
+@keyframes dice-spin {
+	100% {
+		transform: rotate(360deg);
+	}
 }
 
 @media screen and (min-width: 600px) {
