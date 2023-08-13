@@ -92,6 +92,34 @@ article {
 	}
 }
 
+.attribution {
+	position: fixed;
+	bottom: 10px;
+	color: $Light-cyan;
+	a {
+		color: $NeonGreen;
+		text-decoration: none;
+		transition: all 1s ease;
+		animation: glow 2s linear infinite forwards paused;
+	}
+	a:hover {
+		text-decoration: overline;
+		animation-play-state: running;
+	}
+}
+
+@keyframes glow {
+	0% {
+		color: $NeonGreen;
+	}
+	50% {
+		color: $Light-cyan;
+	}
+	100% {
+		color: $NeonGreen;
+	}
+}
+
 @media screen and (min-width: 600px) {
 	.desktop-divider {
 		display: block;

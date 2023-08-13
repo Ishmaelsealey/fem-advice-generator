@@ -87,6 +87,33 @@ article {
     transform: rotate(360deg);
   }
 }
+.attribution {
+  position: fixed;
+  bottom: 10px;
+  color: hsl(193deg, 38%, 86%);
+}
+.attribution a {
+  color: hsl(150deg, 100%, 66%);
+  text-decoration: none;
+  transition: all 1s ease;
+  animation: glow 2s linear infinite forwards paused;
+}
+.attribution a:hover {
+  text-decoration: overline;
+  animation-play-state: running;
+}
+
+@keyframes glow {
+  0% {
+    color: hsl(150deg, 100%, 66%);
+  }
+  50% {
+    color: hsl(193deg, 38%, 86%);
+  }
+  100% {
+    color: hsl(150deg, 100%, 66%);
+  }
+}
 @media screen and (min-width: 600px) {
   .desktop-divider {
     display: block;
