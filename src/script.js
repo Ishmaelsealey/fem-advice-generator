@@ -15,4 +15,4 @@ function getNewAdvice() {
 
 newAdviceBtn.addEventListener('click', getNewAdvice)
 
-document.addEventListener('DOMContentLoaded', getNewAdvice())
+document.addEventListener('DOMContentLoaded', getNewAdvice)
