@@ -9,8 +9,10 @@ function getNewAdvice() {
 	.then(data => {
 		console.log(data.slip)
 		headingId.innerHTML = data.slip.id
-		advice.innerHTML = data.slip.advice
+		advice.innerHTML = `"${data.slip.advice}"`
 	})
 }
 
 newAdviceBtn.addEventListener('click', getNewAdvice)
+
+document.addEventListener('DOMContentLoaded', getNewAdvice())
