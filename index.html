@@ -3,14 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <!-- Search engine optimization - description of the webpage -->
   <meta name="description" content="advice generator app, frontendmentor challenge, solution made by Ishmael Sealey">
+
+  <!-- Import font from google api -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet">
+
+  <!-- title and icon for the title bar -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Advice generator app</title>
+
+  <!-- link the css and scss files used in the project -->
   <link rel="stylesheet" href="./src/styles.css">
   <script src="./src/script.js" defer></script>
-  <title>Frontend Mentor | Advice generator app</title>
 </head>
 <body>
 
@@ -22,6 +30,8 @@
     <p id="js-advice" class="advice">"It is easy to sit up and take notice, what's difficult is getting up and taking actions."</p>
 
     <div class="line-break">
+      <!-- add both svgs to the page to be shown/hidden using css -->
+
       <svg class="desktop-divider" width="444" height="16" xmlns="http://www.w3.org/2000/svg">
         <g fill="none" fill-rule="evenodd">
           <path fill="#4F5D74" d="M0 8h196v1H0zM248 8h196v1H248z"/>
@@ -31,7 +41,15 @@
           </g>
         </g>
       </svg>
-      <svg class="mobile-divider" width="295" height="16" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path fill="#4F5D74" d="M0 8h122v1H0zM173 8h122v1H173z"/><g transform="translate(138)" fill="#CEE3E9"><rect width="6" height="16" rx="3"/><rect x="14" width="6" height="16" rx="3"/></g></g></svg>
+
+      <svg class="mobile-divider" width="295" height="16" xmlns="http://www.w3.org/2000/svg">
+        <g fill="none" fill-rule="evenodd">
+          <path fill="#4F5D74" d="M0 8h122v1H0zM173 8h122v1H173z"/>
+          <g transform="translate(138)" fill="#CEE3E9"><rect width="6" height="16" rx="3"/>
+            <rect x="14" width="6" height="16" rx="3"/>
+          </g>
+        </g>
+      </svg>
     </div>
 
 
@@ -43,9 +61,10 @@
     </button>
   </main>
 
-  <div class="attribution">
+  <!-- add links to my frontend mentor profile and the challenge -->
+  <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://www.frontendmentor.io/profile/Ishmaelsealey">Ishmael Sealey!</a>.
-  </div>
+  </footer>
 </body>
 </html>
