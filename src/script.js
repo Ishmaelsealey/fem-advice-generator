@@ -1,8 +1,8 @@
 // select the html elements used in the program
 
-const headingId = document.querySelector('#js-advice-id');
-const advice = document.querySelector('#js-advice');
-const newAdviceBtn = document.querySelector('#js-dice-btn');
+const HEADING = document.querySelector('#js-advice-id');
+const ADVICE = document.querySelector('#js-advice');
+const ADVICEBTN = document.querySelector('#js-dice-btn');
 
 function getNewAdvice() {
 
@@ -14,13 +14,13 @@ function getNewAdvice() {
 
 	// Using the json response, edit the html page
 	.then(data => {
-		headingId.innerHTML = data.slip.id
-		advice.innerHTML = `"${data.slip.advice}"`
+		HEADING.innerHTML = data.slip.id
+		ADVICE.innerHTML = `"${data.slip.advice}"`
 	})
 }
 
 // run function when dice button is clicked
-newAdviceBtn.addEventListener('click', getNewAdvice)
+ADVICEBTN.addEventListener('click', getNewAdvice)
 
 // run function upon initial page load
 document.addEventListener('DOMContentLoaded', getNewAdvice)
